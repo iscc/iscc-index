@@ -1,7 +1,4 @@
 # iscc-index - ISCC Nearest Neighbor Index - REST OpenAPI
-[![Version](https://img.shields.io/pypi/v/iscc-index.svg)](https://pypi.python.org/pypi/iscc-index/)
-[![Downloads](https://pepy.tech/badge/iscc-index)](https://pepy.tech/project/iscc-index)
-[![Pulls](https://shields.beevelop.com/docker/pulls/titusz/iscc-index.svg?style=flat-square)](https://hub.docker.com/r/titusz/iscc-index)
 
 > A REST OpenAPI Backend for indexing [**ISCC codes**](https://iscc.codes) for digital media files.
 
