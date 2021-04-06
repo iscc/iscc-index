@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+    iscc-service:
+        container_name: iscc-index
+        restart: unless-stopped
+        build: .
+        env_file:
+            - iscc-index.env
+        ports:
+            - 8090:8090
+    iscc-caddy:
+        container_name: iscc-caddy
+        image: "caddy:2.0.0"
+        restart: unless-stopped
+        volumes:
+            - ./Caddyfile:/etc/caddy/Caddyfile  # configuration
+            - caddy-config:/config  # configuation autosaves
+            - caddy-data:/data  # saving certificates
+        ports:
+            - "80:80"
+            - "443:443"
+        depends_on:
+            - iscc-index
+volumes:
+  caddy-config:
+  caddy-data:
+
