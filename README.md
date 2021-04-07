@@ -12,6 +12,8 @@ It includes an interactive API documentation:
 
 The Docker image is published at https://hub.docker.com/r/titusz/iscc-index
 
+A public instance for simple testing purposes is hosted at https://nns.iscc.in
+
 
 ## Install via pip
 
