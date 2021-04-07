@@ -9,6 +9,8 @@ services:
             - iscc-index.env
         ports:
             - 8090:8090
+        volumes:
+            - ./data:/data # iscc lmdb and annoy indexes
     iscc-index-caddy:
         container_name: iscc-index-caddy
         image: "caddy:2.0.0"
@@ -17,7 +19,6 @@ services:
             - ./Caddyfile:/etc/caddy/Caddyfile  # configuration
             - caddy-config:/config  # configuation autosaves
             - caddy-data:/data  # saving certificates
-            - iscc-index:/iscc-index  # iscc lmdb and annoy indexes
         ports:
             - "80:80"
             - "443:443"
@@ -26,5 +27,4 @@ services:
 volumes:
   caddy-config:
   caddy-data:
-  iscc-index:
 
