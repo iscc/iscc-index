@@ -2,7 +2,7 @@
   email tp@iscc.foundation
 }
 
-idx.iscc.in {
+nns.iscc.in {
   header Strict-Transport-Security max-age=31536000;
   header -Server
   reverse_proxy iscc-index:8090
