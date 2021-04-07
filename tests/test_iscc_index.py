@@ -8,7 +8,7 @@ client = TestClient(app)
 
 
 def test_version():
-    assert __version__ == "1.1.0-beta.4"
+    assert __version__ == "1.1.0b5"
 
 
 def test_add_simple():
@@ -33,7 +33,7 @@ def test_query_simple():
                     "ddist": 0,
                     "distance": 0,
                     "imatch": True,
-                    "key": "0",
+                    "key": 0,
                     "matched_iscc": code,
                     "mdist": 0,
                 }
