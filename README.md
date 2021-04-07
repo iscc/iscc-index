@@ -1,4 +1,4 @@
-# iscc-index - ISCC Nearest Neighbor Index - REST OpenAPI
+# iscc-index - ISCC Nearest Neighbor Search
 
 > A REST OpenAPI Backend for indexing [**ISCC codes**](https://iscc.codes) for digital media files.
 
@@ -13,22 +13,13 @@ It includes an interactive API documentation:
 The Docker image is published at https://hub.docker.com/r/titusz/iscc-index
 
 
-## Setup for development
-
-If you are using [poetry](https://python-poetry.org/):
-
-- After checkout cd into code directory and run 'poetry install' to install dependencies.
-- Launch dev server with: 'uvicorn iscc_index.main:app --reload'
-- See API docs at: http://127.0.0.1:8090
-
-
 ## Install via pip
 
 ```bash
 $ pip3 install iscc-index
 ```
 
-Run webservice via uvicorn
+Start webservice via uvicorn
 
 ```bash
 $ iscc-index
@@ -37,6 +28,15 @@ INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8090 (Press CTRL+C to quit)
 ```
+
+## Setup for development
+
+If you are using [poetry](https://python-poetry.org/):
+
+- After checkout cd into code directory and run 'poetry install' to install dependencies.
+- Launch dev server with: 'uvicorn iscc_index.main:app --reload' or 'icscc-index'
+- See API docs at: http://127.0.0.1:8090
+
 
 ## License
 
