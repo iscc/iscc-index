@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-    iscc-service:
+    iscc-index:
         container_name: iscc-index
         restart: unless-stopped
         build: .
@@ -9,8 +9,8 @@ services:
             - iscc-index.env
         ports:
             - 8090:8090
-    iscc-caddy:
-        container_name: iscc-caddy
+    iscc-index-caddy:
+        container_name: iscc-index-caddy
         image: "caddy:2.0.0"
         restart: unless-stopped
         volumes:
