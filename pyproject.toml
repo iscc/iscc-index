@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "iscc-index"
-version = "1.1.0-beta.5"
+version = "1.1.0b5"
 description = "ISCC Index - Nearest Neighbor Search"
 authors = ["Titusz Pan <tp@py7.de>"]
 readme = "README.md"
@@ -14,7 +14,6 @@ python = ">=3.6.1,<3.10"
 fastapi = "^0.63.0"
 iscc = {version = "^1.1.0b5", allow-prereleases = true}
 uvicorn = "^0.13.4"
-importlib-metadata = {version = "^1.0", python = "<3.8"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.3"
